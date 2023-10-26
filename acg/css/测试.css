@@ -1,0 +1,70 @@
+/* 背景 */
+
+.background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    user-select: none;
+}
+
+.background img {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.overlay {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+
+/* logo部分 */
+
+@keyframes spin {
+    0% {
+        transform: translate(-50%, -50%) rotate(0deg);
+    }
+    100% {
+        transform: translate(-50%, -50%) rotate(360deg);
+    }
+}
+
+.logo {
+    position: relative;
+    margin-top: 10%;
+    user-select: none;
+}
+
+.tx-bk {
+    animation: spin 10s linear infinite;
+    /* 旋转速度变慢 */
+}
+
+.tx-bk,
+.tx {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 220px;
+    height: 220px;
+}
+
+.tx {
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+}
