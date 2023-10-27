@@ -1,0 +1,16 @@
+@media only screen and (max-width: 700px) {
+    .tx-bk,
+    .tx {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 190px;
+        height: 190px;
+    }
+    .tx {
+        border-radius: 50%;
+        width: 170px;
+        height: 170px;
+    }
+}

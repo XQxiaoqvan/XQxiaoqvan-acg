@@ -8,6 +8,7 @@
     height: 100%;
     z-index: -1;
     user-select: none;
+    /* 无法选中 */
 }
 
 .background img {
@@ -43,9 +44,13 @@
 }
 
 .logo {
-    position: relative;
-    margin-top: 10%;
+    position: fixed;
+    top: 20%;
+    left: 50%;
+    transform: translateX(-50%);
     user-select: none;
+    pointer-events: none;
+    /* 添加样式，防止图片被拖动 */
 }
 
 .tx-bk {
@@ -67,4 +72,28 @@
     border-radius: 50%;
     width: 200px;
     height: 200px;
+}
+
+
+/* 分界线 */
+
+.fx {
+    border: none;
+    height: 4px;
+    background-color: rgb(255, 255, 255);
+    width: calc(100% - 30%);
+    /* 设置横线的宽度为页面宽度减去左右边距的总和 */
+    margin: 0 15%;
+    /* 设置左右边距 */
+    position: fixed;
+    top: 350px;
+    left: 0;
+}
+
+.fx hr {
+    border: none;
+}
+
+.fx a {
+    color: rgb(255, 255, 255);
 }
