@@ -82,18 +82,25 @@
     height: 4px;
     background-color: rgb(255, 255, 255);
     width: calc(100% - 30%);
-    /* 设置横线的宽度为页面宽度减去左右边距的总和 */
     margin: 0 15%;
-    /* 设置左右边距 */
-    position: fixed;
+    position: relative;
+    /* 将position改为relative */
     top: 350px;
-    left: 0;
+    /* 可以将这行注释掉 */
 }
 
 .fx hr {
     border: none;
+    margin-top: 4px;
+    /* 添加一个适当的上边距 */
 }
 
-.fx a {
-    color: rgb(255, 255, 255);
+.fx-1 {
+    display: flex;
+    /* 使用弹性盒子布局 */
+    justify-content: flex-start;
+    /* 将内容向左对齐 */
+    align-items: center;
+    /* 垂直居中 */
+    color: aliceblue;
 }
