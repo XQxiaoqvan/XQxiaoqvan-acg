@@ -1,4 +1,39 @@
-/* 背景 */
+        html,
+        body {
+            height: 100%;
+        }
+ 
+        body,
+        ul,
+        li,
+        a,
+        p,
+        div {
+            /*慎删*/
+            padding: 0px;
+            margin: 0px;
+        }
+ 
+        #wrap {
+            overflow: hidden;
+            width: 100%;
+        }
+ 
+        #main {
+            top: 0;
+            position: relative;
+        }
+ 
+        .page {
+            /*谨删*/
+            width: 100%;
+            margin: 0;
+        }
+ 
+        #pageUl {
+            position: fixed;
+            right: 10px;
+        }
 
 .background {
     position: fixed;
@@ -31,7 +66,6 @@
     background-color: rgba(0, 0, 0, 0.5);
 }
 
-
 /* logo部分 */
 
 @keyframes spin {
@@ -44,10 +78,7 @@
 }
 
 .logo {
-    position: fixed;
-    top: 20%;
-    left: 50%;
-    transform: translateX(-50%);
+
     user-select: none;
     pointer-events: none;
     /* 添加样式，防止图片被拖动 */
@@ -61,7 +92,7 @@
 .tx-bk,
 .tx {
     position: absolute;
-    top: 50%;
+    top: 6%;
     left: 50%;
     transform: translate(-50%, -50%);
     width: 220px;
@@ -103,4 +134,23 @@
     align-items: center;
     /* 垂直居中 */
     color: aliceblue;
+}
+.din {
+    background-color: rgba(255, 255, 255, 0.5); /* 使用rgba设置颜色并添加透明度 */
+    padding: 30px;
+    border-radius: 10px; /* 添加圆角效果 */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 20px;
+	margin-right: 20px;
+}
+.jz {
+    background-color: rgba(255, 255, 255, 0.5);
+    padding: 250px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 50px;
 }
